@@ -196,7 +196,7 @@ font-style: normal;
   height: 70px;
   width: 160px;
   text-indent: -9999px;
-  background-image: url(../../../dining-hall/detail-thicker.svg);
+  background-image: url(/assets/images/icons/detail-thicker.svg);
   display: block;
   background-size: 100% 100%;
   background-position: center center;
