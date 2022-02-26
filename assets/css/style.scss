@@ -1,0 +1,259 @@
+// $yellow: #fefe01;
+ $lightpink: #e99d79;
+// $darkpink: #D2292C;
+// $border: #FEF7DD;
+
+$yellow: #ffff00;
+//$lightpink: #f2ad78;
+$darkpink: #d60036;
+$border: #f5f5b8;
+
+@font-face {
+    font-family: "Heading";
+    src: url(../../../assets/fonts/heading.ttf);
+}
+
+
+/*
+font-family: futura-pt, sans-serif;
+font-weight: 500;
+font-style: normal;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: $lightpink;
+    color: $darkpink;
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    margin:0px;
+    padding:0px;
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    color: $yellow;
+    font-family: "Heading", Georgia, 'Times New Roman', Times, serif;
+    font-size: 5em;
+    font-weight: 100;
+    text-align: center;
+}
+
+header {
+    position: absolute;
+    display: flex;
+    right: 0;
+    left: 0;
+    padding: 2em;
+    z-index: 1001;
+}
+
+.mobile-show {
+    display: none;
+}
+
+.menu {
+    margin-top: auto;
+    margin-bottom: auto;
+    flex: 1;
+}
+
+.menu:hover {
+    background-color: $yellow;
+}
+
+
+.menu div{
+    width: 35px;
+    height: 4px;
+    background-color: $darkpink;
+    margin: 6px 0;
+}
+
+header .links {
+    margin: auto;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    text-align: center;
+}
+
+header .links a {
+    padding: 1em;
+}
+
+header .icon {
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+
+.dining-hall-icon {
+    height: 70px;
+    width: 160px;
+    text-indent: -9999px;
+    background-image: url(../../../dining-hall/detail-thicker.svg);
+    display: block;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat; 
+}
+
+.show-tiny {
+    display: none;
+}
+
+.dining-hall-icon:hover {
+    opacity: .5;
+}
+
+header .rsvp-container {
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: flex-end;
+    flex:1;
+    display: flex;
+    text-align: right;
+}
+
+.rsvp-button {
+    background-color: $lightpink;
+    color: $darkpink;
+    padding: .7em 1.5em;
+    cursor: pointer;
+    border: 4px solid $darkpink;
+    font-size: 1.1em;
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: .3rem;
+    //box-sizing: content-box;
+}
+.rsvp-button:hover{
+    background-color: $darkpink;
+    border: 4px solid $darkpink;
+    color: $lightpink;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    border-top: 1px solid $darkpink;
+    padding: 2em 1em 2em 1em;
+}
+
+footer .copyright {
+    flex: 1;
+    padding-left: 1em;
+}
+
+footer .copyright p {
+    opacity: .5;
+    margin: 0;
+    line-height: 1.5em;
+}
+
+footer .footer-links a{
+    padding: 1em;
+}
+
+section {
+    min-height: 100vh;
+    position: relative;
+}
+
+.welcome {
+    display: flex;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.center-welcome {
+    margin: auto;
+}
+
+.center-welcome h2 {
+    font-size: 2em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 2em;
+    text-align:center;
+}
+
+.center-welcome p {
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.5em;
+
+}
+
+html a {
+    text-decoration: none;
+    color: $darkpink;
+}
+
+html a:hover {
+    color: $yellow;
+}
+@media only screen and (max-width: 992px) {
+    .mobile-hide{
+        display: none;
+    }
+
+    .mobile-show{
+        display: block;
+    }
+
+    .mobile-dining-hall-container{
+      margin-bottom: 1em;
+      margin-top: 1em;
+    }
+
+
+    .mobile-dining-hall{
+        margin: auto;
+    }
+
+    .mobile-center {
+        text-align: center;
+    }
+
+    .mobile-footer {
+        flex-direction: column-reverse;
+        padding-bottom: 1em;
+        padding-top: 1em;
+        position: sticky;
+        background-color: $lightpink;
+    }
+
+    .mobile-rsvp-button {
+        padding: .5em .7em;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .hide-tiny {
+        display: none;
+    }
+
+    .show-tiny {
+        display: block;
+    }
+}
