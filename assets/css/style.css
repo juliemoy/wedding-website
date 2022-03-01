@@ -475,6 +475,10 @@ html a:focus
 
 /* schedule layout */
 
+.day img {
+  max-height: 8rem;
+}
+
 .card--schedule article {
   text-align: center;
 }
