@@ -24,3 +24,4 @@ function showSlides(n) {
     slides[slideIndex-1].getElementsByClassName.display = "block";
     dots[slideIndex-1].className += " active";
 }
+alert("show slides");
