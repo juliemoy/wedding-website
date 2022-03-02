@@ -548,7 +548,7 @@ html a:focus
   display: block;
 }
 
-.accomodations--mariah .button {
+.button {
   border: 4px solid black;
   padding: 1rem 1.5rem;
   cursor: pointer;
@@ -559,11 +559,12 @@ html a:focus
   text-decoration: none;
 }
 
-.accomodations--mariah .button:hover,
-.accomodations--mariah .button:focus {
+ .button:hover,
+ .button:focus {
   color: #ffff00;
-  background:hsl(19, 72%, 69%);
-  border: 4px solid hsl(345, 100%, 42%);
+  background:#e99b77;
+  border: 4px solid #d60036;
+  text-decoration: none;
 }
 
 .accomodations--hotels {
@@ -634,6 +635,10 @@ html a:focus
 .cabin-info {
   border-bottom: 4px solid black;
   grid-area: cabin-info;
+}
+
+.cabin-info .button {
+  margin: 1rem 2rem;
 }
 .card--camping article p {
   padding: 1rem;
@@ -758,11 +763,9 @@ html a:focus
     border-left: 4px solid black;
     align-items: center;
     display: flex;
-  }
-
-  .cabin-info p {
-    justify-self: center;
-  }
+    flex-direction: column;
+     justify-content: space-evenly;
+      }
 
   
 }
