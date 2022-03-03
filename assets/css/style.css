@@ -365,9 +365,9 @@ html a:focus
     background-position: center;
 }
 
-.primary-navigation[data-visible="true"] {
-    /* transform: translateX(100%); */
-}
+/* .primary-navigation[data-visible="true"] {
+      transform: translateX(100%); 
+} */
 
 .mobile-nav-toggle[aria-expanded="true"] {
     background-image: url(../images/icons/icon-close.svg);
