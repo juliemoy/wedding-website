@@ -520,7 +520,7 @@ html a:focus
 
 }
 
-.card--schedule p {
+.card--schedule article p {
   padding: 1rem;
 }
 
