@@ -1,5 +1,5 @@
 const nav = document.querySelector(".primary-navigation");
-const navToggle = document.querySelector(".mobile-nav-toggle");
+const navToggle = document.getElementById("mobile-nav-toggle");
 
 let navLinks = document.querySelectorAll(".primary-navigation a");
 
@@ -11,22 +11,28 @@ navToggle.addEventListener("click", () => {
     } else {
         closeMenu();
     }
-})
+});
 
+window.addEventListener('mouseup', (evnt) => {
+    if(evnt.target != nav && evnt.target.parentNode != nav) {
+        closeMenu();
+    }
+} )
 
 navLinks.forEach(function(i){
     i.addEventListener('click', function() {
         closeMenu();
     });
 });
-console.log(navLinks);
 
 function openMenu() {
     nav.setAttribute("data-visible", true);
     navToggle.setAttribute("aria-expanded", true);
+    nav.classList.remove("mobile-hide");
 }
 
 function closeMenu() {
+    nav.classList.add("mobile-hide");
     nav.setAttribute("data-visible", false);
     navToggle.setAttribute("aria-expanded", false);
 }
