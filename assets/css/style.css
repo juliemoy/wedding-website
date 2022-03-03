@@ -90,15 +90,13 @@ html, body {
 
 h1 {
   color: #ffff00;
-  /* font-family: "Heading", Georgia, "Times New Roman", Times, serif; */
   line-height: 1.1;
   font-size: clamp(5rem,8vw,7rem);
   margin-top: 1rem;
-  /* font-weight: 100; */
   text-align: center;
   font-family: samantha-italic,sans-serif;
-font-weight: 400;
-font-style: normal;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .primary-header {
@@ -476,6 +474,10 @@ html a:focus
 
 /* schedule layout */
 
+.day img {
+  max-height: 8rem;
+}
+
 .card--schedule article {
   text-align: center;
 }
@@ -545,7 +547,7 @@ html a:focus
   display: block;
 }
 
-.accomodations--mariah .button {
+.button {
   border: 4px solid black;
   padding: 1rem 1.5rem;
   cursor: pointer;
@@ -556,11 +558,12 @@ html a:focus
   text-decoration: none;
 }
 
-.accomodations--mariah .button:hover,
-.accomodations--mariah .button:focus {
+ .button:hover,
+ .button:focus {
   color: #ffff00;
-  background:hsl(19, 72%, 69%);
-  border: 4px solid hsl(345, 100%, 42%);
+  background:#e99b77;
+  border: 4px solid #d60036;
+  text-decoration: none;
 }
 
 .accomodations--hotels {
@@ -621,7 +624,6 @@ html a:focus
 .image-2 {
   transform: rotate(2deg);
 }
-
 /* FAQ */
 .card--faq article {
   padding: 1rem;
@@ -629,4 +631,145 @@ html a:focus
 
 .card--faq h4{
   margin-top: 2rem;
+}
+/* camping */
+
+.card--camping {
+  margin-top: 6rem;
+}
+
+.cabin-info {
+  border-bottom: 4px solid black;
+  grid-area: cabin-info;
+}
+
+.cabin-info .button {
+  margin: 1rem 2rem;
+}
+.card--camping article p {
+  padding: 1rem;
+}
+
+.camping h2 {
+  font-family: futura-pt, sans-serif;
+}
+
+.slideshow-container {
+  max-width: 80%;
+  /* max-height: 50vh; */
+  position: relative;
+  margin: auto;
+  grid-area: cabin-img
+}
+
+.cabins {
+  margin-top: 1rem;
+  text-align: center;
+  display: none;
+}
+
+.cabins img {
+  margin-top: 1rem;
+  max-width: 100%;
+  /* height: 50vh; */
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 1rem;
+  color: hsl(345, 100%, 42%);
+  font-weight: bold;
+  font-size: 2rem;
+  transition: 0.4s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover,
+.prev:focus, .next:focus {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.cabin-text {
+  color: #f2f2f2;
+  font-size: 1rem;
+  padding: .5rem .75rem;
+  position: absolute;
+  bottom: .5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: .75rem;
+  padding: .5rem .75rem;
+  position: absolute;
+  top: 0;
+}
+
+.dot-container {
+  text-align: center;
+  margin-bottom: 1rem;
+  grid-area: dots;
+}
+.dot {
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.4s ease;
+}
+
+.active, .dot:hover, .dot:focus {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media (min-width:60rem) {
+  .card--camping article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'cabin-img cabin-info '
+    ' dots cabin-info';
+  }
+
+  .card--camping .cabin-info{
+    border-bottom: 0;
+    border-left: 4px solid black;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+     justify-content: space-evenly;
+      }
 }
