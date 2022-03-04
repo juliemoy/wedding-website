@@ -277,6 +277,7 @@ footer {
   border-top: 1px solid #d60036;
   padding: 2em 1em 2em 1em;
   background: hsl(19, 72%, 69%);
+  font-size: 1rem;
 }
 
 footer .copyright {
