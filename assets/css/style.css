@@ -657,6 +657,11 @@ html a:focus
   transform: rotate(-1deg);
 }
 
+.explore--list-links {
+  padding-left: 1rem;
+  font-size: .9rem;
+}
+
 .image-geese {
   transform: rotate(1deg);
 }
