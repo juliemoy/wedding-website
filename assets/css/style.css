@@ -626,10 +626,10 @@ html a:focus
   }
 }
 
-.card--rsvp article{
+/* .card--rsvp article{
   text-align: center;
   margin-top: 25vh;
-}
+} */
 
 .card--explore div {
   padding: 1rem;
