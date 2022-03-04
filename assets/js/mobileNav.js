@@ -4,6 +4,7 @@ const navToggle = document.getElementById("mobile-nav-toggle");
 let navLinks = document.querySelectorAll(".primary-navigation a");
 
 navToggle.addEventListener("click", () => {
+
     const visibility = nav.getAttribute("data-visible");
 
     if (visibility === "false") {
@@ -14,7 +15,7 @@ navToggle.addEventListener("click", () => {
 });
 
 window.addEventListener('mouseup', (evnt) => {
-    if(evnt.target != nav && evnt.target.parentNode != nav) {
+    if(evnt.target != nav && evnt.target.parentNode != nav && evnt.target != navToggle) {
         closeMenu();
     }
 } )
