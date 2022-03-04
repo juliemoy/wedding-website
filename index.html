@@ -12,19 +12,21 @@
 <script src="./assets/js/mobileNav.js" defer></script>
 
 </head>
-<body>
+<body id="#top">
     <header class="primary-header">
         <button class="menu mobile-nav-toggle mobile-show" id="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
         <div class="icon">
             <a class="dining-hall-icon mobile-hide" href="/"></a>
         </div>
         <nav class="links primary-navigation mobile-hide" data-visible="false" >
+            <a href="#top" class="mobile-dining-hall-icon"></a>
             <a href="#sharpe">Sharpe Reservation</a>
             <a href="#schedule">Schedule</a>
             <a href="#accomodations">Accomodations</a>
             <a href="#explore">Explore</a>
             <a href="#faq">FAQ</a>
             <a href="#registry">Registry</a>
+            
         </nav>
         <div class="rsvp-container">
             <a href="#rsvp" class="rsvp-button mobile-rsvp-button">RSVP</a>
@@ -60,6 +62,8 @@
                 </div>
                 <div class="sharpe--getting-to flow">
                     <h3>Getting to Sharpe Reservation</h3>
+                    
+                    <!-- <img class="sharpe--image-sign" src="assets/images/sharpe/sign.jpg" alt="entrance sign to sharpe reservation">                     -->
                     <p>Sharpe Reservation is located at <a target="_blank" href="https://www.google.com/maps/place/Sharpe+Reservation/@41.5140525,-73.8579763,15z/data=!4m5!3m4!1s0x0:0x61f0c72e0072bb7e!8m2!3d41.5141291!4d-73.8579958">436 Van Wyck Lake Road, Fishkill, NY 12425</a>.  Once on Sharpe Reservation there will be plenty of signs to Camp Mariah.</p>
                     <p>Check this area on the wedding weekend for the entrance gate code.</p>
                     <div class="sharpe--map">
@@ -136,7 +140,7 @@
             <article>
                 <div class="accomodations--mariah">
                     <h3>Camp Mariah</h3>
-                    <p>Camp Mariah often (somewhat jealously) called "Hotel Mariah" by other campers on Sharpe Reservation. It offers a variety of comfortable cabin options with in-cabin bathrooms and showers with hot water.</p>
+                    <p>Camp Mariah is often (somewhat jealously) called "Hotel Mariah" by other campers on Sharpe Reservation. It offers a variety of comfortable cabin options with in-cabin bathrooms and showers with hot water.</p>
                     <a  href="/camping">Find out more about staying at Camp Mariah &#8594</a>
                     <a class="button" href="https://forms.gle/Cpa9GVSFBSKo94dq9" target="_blank">Book your stay at Camp Mariah</a>
                 </div>
@@ -163,10 +167,13 @@
                 <div class="explore--sharpe">
                     <h3>Explore Sharpe Reservation</h3>
                     <div class="explore--images">
-                        <img class="explore--image" src="./assets/images/explore/geese.jpg" alt="geese walking">
-                        <img class="explore--image image-2" src="./assets/images/explore/trail.jpg" alt="hiking trail">
+                        <img class="explore--image image-birdhouses" src="assets/images/explore/birdhouses.jpg" alt="birdhouses">
+                        <img class="explore--image image-geese" src="./assets/images/explore/geese.jpg" alt="geese walking">
+                        <img class="explore--image image-trail" src="./assets/images/explore/trail.jpg" alt="hiking trail">
+                        <img class="explore--image image-lake" src="assets/images/explore/lake.jpg" alt="lake">
+                        <img class="explore--image image-sign" src="assets/images/explore/mariah-sign.jpg" alt="camp sign">
                     </div>
-                    <p>During the day on Saturday we invite you to explore Camp Mariah, which is usually closed to the public. Grab breakfast and snacks at the lawn and enjoy a nature walk or hike, or stroll around the lake.  There will be maps provided.</p>
+                    <p>During the day on Saturday we invite you to explore Camp Mariah, which is usually closed to the public. Grab breakfast and snacks at the lawn and enjoy a nature walk or hike, or stroll along the lake.  There will be maps provided.</p>
                 </div>
                 <div class="explore--area">
                     <h3>Explore the Area</h3>
@@ -280,7 +287,7 @@
         <div class="footer-links mobile-center">
             <a href="/about">About</a>
             <a href="mailto:hello@julieandmichelle.party">Contact</a>
-            <a href="#welcome">Back to Top &#8593</a>
+            <a href="#top">Back to Top &#8593</a>
         </div>
     </footer>
 </body>
