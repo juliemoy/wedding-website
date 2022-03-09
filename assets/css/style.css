@@ -226,6 +226,10 @@ h1 {
   }
 }
 
+.padding {
+  padding: 1rem;
+}
+
 
 .show-tiny {
   display: none;
@@ -663,7 +667,7 @@ html a:focus
   font-size: .9rem;
 }
 
-@media (min-width:45rem) {
+@media (min-width:60rem) {
   .explore--list-links {
     display: inline;
     padding-left: 0.5rem;
