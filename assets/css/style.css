@@ -831,3 +831,21 @@ html a:focus
      justify-content: space-evenly;
       }
 }
+
+.about--hero-container {
+  position: relative;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.about--hero-image {
+  max-width: 100%;
+  max-height: 75vh;
+}
+
+.about--hero-container h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
