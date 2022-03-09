@@ -701,6 +701,13 @@ html a:focus
   grid-area: cabin-info;
 }
 
+.cabin-info>img {
+  margin-inline: auto;
+  margin-block: 2rem;
+  max-width: 90%;
+  border: 8px solid white;
+}
+
 .cabin-info .button {
   margin: 1rem 2rem;
 }
