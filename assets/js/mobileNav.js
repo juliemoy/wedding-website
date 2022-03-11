@@ -37,3 +37,33 @@ function closeMenu() {
     nav.setAttribute("data-visible", false);
     navToggle.setAttribute("aria-expanded", false);
 }
+
+weddingInfo = document.querySelector(".wedding-info");
+
+console.log(weddingInfo);
+
+var scrollFunc = function() {
+    var y = window.scrollY;
+    if (y >= 10) {
+        weddingInfo.hidden = false;
+    } else {
+        weddingInfo.hidden = true;
+    }
+}
+
+window.onload = function() {
+    checkSize();
+}
+
+window.addEventListener("resize", checkSize);
+
+function checkSize() {
+    let windowHeight = window.innerHeight - 120;
+    let welcomeHeight = document.querySelector(".center-welcome").offsetHeight + 146;
+    if(windowHeight < welcomeHeight) {
+        weddingInfo.hidden = true;
+        window.addEventListener("scroll", scrollFunc);
+    } else {
+        weddingInfo.hidden = false;
+    }
+}
