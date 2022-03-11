@@ -57,7 +57,7 @@
 }
 
 html, body {
-  background-color: hsl(19, 72%, 69%);
+  background-color: #e99b77;
   color: #d60036;
   font-family: futura-pt, sans-serif;
   font-weight: 500;
@@ -177,6 +177,7 @@ h1 {
     margin: 0;
     /* transform: translateX(-100%); */
     /* transition: 300ms ease-in-out; */
+    overflow-y: scroll;
     
 
   }
@@ -239,6 +240,7 @@ h1 {
 .dining-hall-icon:focus
 {
   opacity: 0.5;
+  /* background-image:url(../images/icons/mobile-dining-hall.svg); */
 }
 
 .primary-header .rsvp-container {
@@ -299,6 +301,12 @@ footer .footer-links a {
   padding: 1em;
 }
 
+footer .back-to-top:hover,
+footer .back-to-top:focus {
+  text-decoration: none;
+  color: #ffff00;
+}
+
 section {
   min-height: 100vh;
   display: block;
@@ -312,7 +320,7 @@ section {
   bottom: 0;
   right: 0;
   left: 0;
-  top: 0;
+  top: 6rem;
   position: absolute;
 }
 
@@ -500,7 +508,7 @@ html a:focus
 #sharpe--map {
   max-height: 50%;
   max-width: 100%;
-  aspect-ratio: 1 1;
+  /* aspect-ratio: 1 1; */
   border: 8px solid white;
   box-shadow: 0 0 3px black;
   text-align: center;
@@ -521,11 +529,15 @@ html a:focus
   text-align: center;
 }
 
+/* .card--schedule article img {
+  max-height: 5rem;
+} */
+
 .card--schedule h3 {
   text-align: center;
   align-self: start;
-  padding: 1rem;
-  border-bottom: 4px solid black;
+  padding-top: 1rem;
+  /* border-bottom: 4px solid black; */
 }
 
 .schedule--friday {
@@ -537,6 +549,8 @@ html a:focus
   grid-area: saturday;
   border-bottom: 4px solid black;
 } 
+
+
 
 @media(min-width: 60rem) {
   .card--schedule article {
@@ -562,6 +576,14 @@ html a:focus
 .card--schedule article p {
   padding: 1rem;
 }
+
+.card--schedule article .date {
+  border-bottom: 4px solid black;
+  padding-top:0;
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
 
 .schedule--sunday {
   grid-area: sunday;
@@ -690,6 +712,7 @@ html a:focus
 .card--faq h4{
   margin-top: 2rem;
 }
+
 /* camping */
 
 .card--camping {
@@ -839,6 +862,14 @@ html a:focus
       }
 }
 
+/* about page */
+
+.about--container {
+  max-width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
 .about--hero-container {
   position: relative;
   text-align: center;
@@ -847,7 +878,7 @@ html a:focus
 
 .about--hero-image {
   max-width: 100%;
-  max-height: 75vh;
+  max-height: 65vh;
 }
 
 .about--hero-container h1 {
@@ -855,4 +886,108 @@ html a:focus
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.about--grid-container img {
+  max-width: 85%;
+}
+
+.about--grid-container {
+  margin-top: 8rem;
+  display: grid;
+  align-content: center;
+}
+
+.about--grid-container p {
+  margin-bottom: 2rem;
+}
+
+.about--grid-container img {
+  margin: auto;
+}
+
+
+@media (min-width: 60rem){
+  .about--grid-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 1rem;
+    grid-template-areas: 
+    "michelle-info michelle-image"
+    "julie-image julie-info"
+    "travel-info travel-image-san-sebastian"
+    "travel-image-cartagena travel-cartagena"
+    "hiking-info hiking-image"
+    "hiking-image-catskills together"
+    "adventure adventure"
+    "photo-spread photo-spread";
+
+    /* justify-items: center; */
+    align-items: center;
+
+  }
+
+  .about--grid-container img {
+    max-height: 40vh;
+  }
+
+  .about--michelle-image {
+    grid-area: michelle-image;
+  }
+  .about--michelle-info {
+    grid-area:michelle-info;
+    text-align:end;
+  }
+  .about--julie-image {
+    grid-area:julie-image;
+    justify-self:end;
+  }
+  .about--julie-info {
+    grid-area:julie-info;
+    text-align: start;  
+  }
+  .about--travel-image-san-sebastian{
+    grid-area:travel-image-san-sebastian;
+  }
+  .about--travel-info {
+    grid-area: travel-info;
+    text-align: end;
+  }
+  .about--travel-image-cartagena{
+    grid-area:travel-image-cartagena;
+    justify-self: end;
+  }
+  .about--travel-cartagena {
+    grid-area: travel-cartagena;
+    text-align: start;
+  }
+  .about--hiking-image {
+    grid-area: hiking-image;
+  }
+  .about--hiking {
+    grid-area: hiking-info;
+    text-align: end;
+  }
+  .about--hiking-image-catskills {
+    grid-area: hiking-image-catskills;
+    justify-self: end;
+  }
+  .about--together {
+    grid-area: together;
+    text-align: start;
+  }
+  .about--adventure {
+    grid-area: adventure;
+    max-width: 42rem;
+    justify-self: center;
+    margin-block: 3rem;
+    
+  }
+  .about--photo-spread {
+    grid-area:photo-spread;
+  }
+
+  .about--grid-container img {
+    margin:0;
+  }
+
 }
