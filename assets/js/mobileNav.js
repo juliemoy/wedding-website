@@ -59,7 +59,7 @@ window.addEventListener("resize", checkSize);
 
 function checkSize() {
     let windowHeight = window.innerHeight - 120;
-    let welcomeHeight = document.querySelector(".center-welcome").offsetHeight + 146;
+    let welcomeHeight = document.querySelector(".center-welcome").offsetHeight + 156;
     if(windowHeight < welcomeHeight) {
         weddingInfo.hidden = true;
         window.addEventListener("scroll", scrollFunc);
