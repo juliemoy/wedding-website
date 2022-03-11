@@ -91,7 +91,7 @@ html, body {
 h1 {
   color: #ffff00;
   line-height: 1.1;
-  font-size: clamp(5rem,8vw,7rem);
+  font-size: clamp(4rem,8vw,7rem);
   margin-top: 1rem;
   text-align: center;
   font-family: samantha-italic,sans-serif;
@@ -353,7 +353,7 @@ html a:focus
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 60rem) {
+@media (max-width: 60rem) {
   .mobile-hide {
     display: none;
   }
