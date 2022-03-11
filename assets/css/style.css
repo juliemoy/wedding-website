@@ -317,7 +317,7 @@ section {
 
 .welcome {
   display: flex;
-  margin-top: clamp(4rem, calc((80vh - 21rem) / 2), 10rem);
+  margin-top: clamp(4rem, calc((90vh - 21rem) / 2), 10rem);
   /* bottom: 0;
   right: 0;
   left: 0;
@@ -703,6 +703,10 @@ html a:focus
 
 .image-trail {
   transform: rotate(-1.5deg);
+}
+
+.image-lake {
+  transform: rotate(0deg);
 }
 
 /* FAQ */
