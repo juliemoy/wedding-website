@@ -62,7 +62,7 @@ function checkSize() {
     let marriedElement = document.querySelector(".center-welcome h2");
     let computedStyle = getComputedStyle(marriedElement);
     let marriedMargin = computedStyle.marginBottom;
-    let welcomeHeight =  document.querySelector(".center-welcome").offsetHeight - parseInt(marriedMargin) + 200;
+    let welcomeHeight =  document.querySelector(".center-welcome").offsetHeight - parseInt(marriedMargin) + 250;
 //alert(welcomeHeight);
     if(windowHeight < welcomeHeight) {
         // alert(windowHeight);
