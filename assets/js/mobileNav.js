@@ -67,12 +67,12 @@ function checkSize() {
     if(windowHeight < welcomeHeight) {
         // alert(windowHeight);
 
-        //marriedElement.style.marginBottom = "37vh";
-        weddingInfo.hidden = true;
-        window.addEventListener("scroll", scrollFunc);
+        marriedElement.style.marginBottom = "37vh";
+       // weddingInfo.hidden = true;
+       // window.addEventListener("scroll", scrollFunc);
     } else {
         weddingInfo.hidden = false;
-      // marriedElement.style.marginBottom = "2em";
-      window.removeEventListener("scroll", scrollFunc);
+      marriedElement.style.marginBottom = "2em";
+     // window.removeEventListener("scroll", scrollFunc);
     }
 }
