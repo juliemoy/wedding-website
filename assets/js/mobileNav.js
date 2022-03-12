@@ -42,20 +42,20 @@ weddingInfo = document.querySelector(".wedding-info");
 
 //console.log(weddingInfo);
 
-var scrollFunc = function() {
-    var y = window.scrollY;
-    if (y >= 100) {
-        weddingInfo.hidden = false;
-    } else {
-        weddingInfo.hidden = true;
-    }
-}
+//var scrollFunc = function() {
+  //  var y = window.scrollY;
+ //   if (y >= 100) {
+  //      weddingInfo.hidden = false;
+ //   } else {
+  //      weddingInfo.hidden = true;
+ //   }
+//}
 
-window.onload = function() {
-    checkSize();
-}
+//window.onload = function() {
+ //   checkSize();
+//}
 
-window.addEventListener("resize", checkSize);
+//window.addEventListener("resize", checkSize);
 
 function checkSize() {
     let windowHeight = window.innerHeight - 120;
