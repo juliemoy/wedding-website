@@ -281,7 +281,7 @@ footer {
   right: 0;
   display: flex;
   border-top: 1px solid #d60036;
-  padding: 2em 1em 2em 1em;
+  padding: 1rem 1rem 1rem 1rem;
   background: hsl(19, 72%, 69%);
   font-size: 1rem;
 }
