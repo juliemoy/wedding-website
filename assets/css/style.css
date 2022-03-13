@@ -298,7 +298,11 @@ footer .copyright p {
 }
 
 footer .footer-links a {
-  padding: 1em;
+  padding: 0 1rem;
+}
+
+footer .back-to-top {
+  display: inline-block;
 }
 
 footer .back-to-top:hover,
