@@ -297,8 +297,9 @@ footer .copyright p {
   line-height: 1.5em;
 }
 
-footer .footer-links a {
-  padding: 0 1rem;
+footer .footer-links {
+  display:flex;
+  justify-content: space-evenly;
 }
 
 footer .back-to-top {
@@ -309,6 +310,12 @@ footer .back-to-top:hover,
 footer .back-to-top:focus {
   text-decoration: none;
   color: #ffff00;
+}
+
+@media (min-width: 60rem) {
+  footer .footer-links a {
+    padding-inline: 1rem;
+  }
 }
 
 section {
