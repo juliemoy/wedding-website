@@ -94,7 +94,7 @@ h1 {
   font-size: clamp(4rem,8vw,7rem);
   margin-top: 1rem;
   text-align: center;
-  font-family: samantha-italic,sans-serif;
+  font-family: var(--ff-heading);
   font-weight: 400;
   font-style: normal;
 }
@@ -150,7 +150,7 @@ h1 {
 
 .primary-header .links a:hover,
 .primary-header .links a:focus {
-  color: #ffff00;
+  color: hsl(var(--clr-yellow));
 }
 
 .primary-navigation .icon {
@@ -932,6 +932,8 @@ html a:focus
   justify-content: center;
 }
 
+
+
 @media (min-width: 60rem){
   .about--grid-container {
     display:grid;
@@ -1021,4 +1023,7 @@ html a:focus
     margin:0;
   }
 
+  .about--photo-spread img {
+    max-width: 33%;
+  }
 }
