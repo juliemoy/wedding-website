@@ -281,7 +281,7 @@ footer {
   right: 0;
   display: flex;
   border-top: 1px solid #d60036;
-  padding: 2em 1em 2em 1em;
+  padding: 1rem 1rem 1rem 1rem;
   background: hsl(19, 72%, 69%);
   font-size: 1rem;
 }
@@ -297,14 +297,25 @@ footer .copyright p {
   line-height: 1.5em;
 }
 
-footer .footer-links a {
-  padding: 1em;
+footer .footer-links {
+  display:flex;
+  justify-content: space-evenly;
+}
+
+footer .back-to-top {
+  display: inline-block;
 }
 
 footer .back-to-top:hover,
 footer .back-to-top:focus {
   text-decoration: none;
   color: #ffff00;
+}
+
+@media (min-width: 60rem) {
+  footer .footer-links a {
+    padding-inline: 1rem;
+  }
 }
 
 section {
@@ -884,7 +895,7 @@ html a:focus
 
 .about--hero-image {
   max-width: 100%;
-  max-height: 65vh;
+  max-height: 75vh;
 }
 
 .about--hero-container h1 {
@@ -910,6 +921,10 @@ html a:focus
   margin-bottom: 2rem;
 }
 
+.about--grid-container .about--travel-image-cartagena-julie{
+  margin-bottom: 1rem;
+}
+
 .about--photo-spread {
   display: flex;
   flex-direction: column;
@@ -919,17 +934,18 @@ html a:focus
 
 @media (min-width: 60rem){
   .about--grid-container {
-    grid-template-columns: 1fr 1fr;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem 1rem;
     grid-template-areas: 
-    "michelle-info michelle-image"
-    "julie-image julie-info"
-    "travel-info travel-image-san-sebastian"
-    "travel-image-cartagena travel-cartagena"
-    "hiking-info hiking-image"
-    "hiking-image-catskills together"
-    "adventure adventure"
-    "photo-spread photo-spread";
+    "michelle-info michelle-info michelle-image michelle-image"
+    "julie-image julie-image julie-info julie-info"
+    "travel-info travel-info travel-image-san-sebastian travel-image-san-sebastian"
+    "travel-image-cartagena-julie travel-cartagena travel-cartagena travel-image-cartagena-michelle"
+    "hiking-info hiking-info hiking-image hiking-image"
+    "hiking-image-catskills hiking-image-catskills together together"
+    "adventure adventure adventure adventure"
+    "photo-spread photo-spread photo-spread photo-spread";
 
     /* justify-items: center; */
     align-items: center;
@@ -937,7 +953,7 @@ html a:focus
   }
 
   .about--grid-container img {
-    max-height: 40vh;
+    max-height: 60vh;
   }
 
   .about--michelle-image {
@@ -962,13 +978,17 @@ html a:focus
     grid-area: travel-info;
     text-align: end;
   }
-  .about--travel-image-cartagena{
-    grid-area:travel-image-cartagena;
+  .about--travel-image-cartagena-julie{
+    grid-area:travel-image-cartagena-julie;
     justify-self: end;
+  }
+  .about--travel-image-cartagena-michelle{
+    grid-area:travel-image-cartagena-michelle;
+    justify-self: start;
   }
   .about--travel-cartagena {
     grid-area: travel-cartagena;
-    text-align: start;
+    text-align: center;
   }
   .about--hiking-image {
     grid-area: hiking-image;

@@ -42,14 +42,14 @@ weddingInfo = document.querySelector(".wedding-info");
 
 //console.log(weddingInfo);
 
-var scrollFunc = function() {
-    var y = window.scrollY;
-    if (y >= 100) {
-        weddingInfo.hidden = false;
-    } else {
-        weddingInfo.hidden = true;
-    }
-}
+//var scrollFunc = function() {
+  //  var y = window.scrollY;
+ //   if (y >= 100) {
+  //      weddingInfo.hidden = false;
+ //   } else {
+  //      weddingInfo.hidden = true;
+ //   }
+//}
 
 // window.onload = function() {
 //     checkSize();
@@ -76,3 +76,4 @@ var scrollFunc = function() {
 //      // window.removeEventListener("scroll", scrollFunc);
 //     }
 // }
+
