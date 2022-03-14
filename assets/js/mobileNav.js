@@ -38,7 +38,7 @@ function closeMenu() {
     navToggle.setAttribute("aria-expanded", false);
 }
 
-weddingInfo = document.querySelector(".wedding-info");
+//weddingInfo = document.querySelector(".wedding-info");
 
 //console.log(weddingInfo);
 
