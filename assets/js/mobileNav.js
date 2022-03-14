@@ -51,28 +51,28 @@ var scrollFunc = function() {
     }
 }
 
-window.onload = function() {
-    checkSize();
-}
+// window.onload = function() {
+//     checkSize();
+// }
 
-window.addEventListener("resize", checkSize);
+// window.addEventListener("resize", checkSize);
 
-function checkSize() {
-    let windowHeight = window.innerHeight - 120;
-    let marriedElement = document.querySelector(".center-welcome h2");
-    let computedStyle = getComputedStyle(marriedElement);
-    let marriedMargin = computedStyle.marginBottom;
-    let welcomeHeight =  document.querySelector(".center-welcome").offsetHeight - parseInt(marriedMargin) + 400;
-//alert(welcomeHeight);
-    if(windowHeight < welcomeHeight) {
-        // alert(windowHeight);
+// function checkSize() {
+//     let windowHeight = window.innerHeight - 120;
+//     let marriedElement = document.querySelector(".center-welcome h2");
+//     let computedStyle = getComputedStyle(marriedElement);
+//     let marriedMargin = computedStyle.marginBottom;
+//     let welcomeHeight =  document.querySelector(".center-welcome").offsetHeight - parseInt(marriedMargin) + 200;
+// alert(welcomeHeight);
+//     if(windowHeight < welcomeHeight) {
+//         // alert(windowHeight);
 
-        marriedElement.style.marginBottom = "37vh";
-       // weddingInfo.hidden = true;
-       // window.addEventListener("scroll", scrollFunc);
-    } else {
-        weddingInfo.hidden = false;
-      marriedElement.style.marginBottom = "2em";
-     // window.removeEventListener("scroll", scrollFunc);
-    }
-}
+//         marriedElement.style.marginBottom = "37vh";
+//        // weddingInfo.hidden = true;
+//        // window.addEventListener("scroll", scrollFunc);
+//     } else {
+//         weddingInfo.hidden = false;
+//       marriedElement.style.marginBottom = "2em";
+//      // window.removeEventListener("scroll", scrollFunc);
+//     }
+// }
