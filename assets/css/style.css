@@ -99,6 +99,20 @@ h1 {
   font-style: normal;
 }
 
+.skip-to-content {
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid hsl(var(--clr-dark));
+  position: absolute;
+  z-index: 1000;
+  transform: translateY(-100%);
+  transition: transform 300ms ease-in;
+}
+
+.skip-to-content:focus {
+  transform: translateY(0%);
+}
+
 .primary-header {
   position: absolute;
   display: flex;
