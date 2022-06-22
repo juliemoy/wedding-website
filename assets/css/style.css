@@ -1041,3 +1041,12 @@ html a:focus
     max-width: 33%;
   }
 }
+
+.registry--container {
+  margin: 2rem;
+}
+
+.registry--button {
+  margin: auto;
+  max-width: 25rem;
+}
